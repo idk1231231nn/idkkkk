@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazino 777 - Tu Refugio de Juegos y Bienestar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #101c2e;
+            overflow-x: hidden;
+        }
+
+        .serif-font {
+            font-family: 'Cinzel', Georgia, serif;
+        }
+
+        /* Animated Snowflakes Canvas / Overlay Background */
+        .snow-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            background: 
+                radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.4) 0%, transparent 60%),
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.15) 0%, transparent 40%);
+        }
+
+        /* Snow effect keyframes */
+        @keyframes snowfall {
+            0% {
+                transform: translateY(-10px) translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(20px);
+                opacity: 0.2;
+            }
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: #fff;
+            user-select: none;
+            pointer-events: none;
+            animation: snowfall linear infinite;
+            z-index: 2;
+        }
+
+        /* Glass / Cream Card Styling */
+        .pill-card {
+            background: linear-gradient(135deg, rgba(255, 250, 240, 0.94) 0%, rgba(248, 238, 222, 0.92) 100%);
+            border: 2.5px solid #6b4321;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            cursor: pointer;
+        }
+
+        .pill-card:hover {
+            transform: scale(1.04) translateY(-3px);
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35), 0 0 15px rgba(255, 223, 150, 0.5);
+            border-color: #8c5324;
+        }
+
+        /* Hover enlarge transition for standard buttons */
+        .zoom-hover {
+            transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;
+        }
+
+        .zoom-hover:hover {
+            transform: scale(1.06);
+        }
+
+        /* Glow effects */
+        .header-glow {
+            text-shadow: 0 0 12px rgba(255, 238, 190, 0.8), 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-glow {
+            background: radial-gradient(ellipse at center, rgba(255, 225, 160, 0.85) 0%, rgba(255, 235, 190, 0.6) 60%, rgba(255, 245, 220, 0) 100%);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121c2b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6b4321;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between text-gray-800 relative select-none">
+
+    <div id="snow-container" class="fixed inset-0 pointer-events-none z-10"></div>
+
+    <!-- MAIN BACKGROUND WRAPPER -->
+    <div class="relative min-h-screen flex flex-col justify-between bg-cover bg-center bg-no-repeat" 
+         style="background-image: linear-gradient(to bottom, rgba(15, 25, 40, 0.3) 0%, rgba(15, 25, 40, 0.1) 40%, rgba(15, 25, 40, 0.4) 100%), url('https://images.unsplash.com/photo-1517299321609-52687d1bc55a?q=80&w=2070&auto=format&fit=crop');">
+        
+        <div class="snow-overlay"></div>
+
+        <!-- HEADER SECTION -->
+        <header class="relative z-20 text-center pt-8 pb-4 px-4">
+            <div class="inline-flex items-center justify-center gap-3">
+                <span class="text-amber-200 text-2xl md:text-3xl filter drop-shadow">❄</span>
+                <h1 class="serif-font text-3xl md:text-5xl lg:text-6xl font-extrabold text-[#4a2610] tracking-wider header-glow">
+                    BRAZINO 777
+                </h1>
+                <span class="text-amber-200 text-2xl md:text-3xl filter drop-shadow">❄</span>
+            </div>
+            <p class="serif-font text-xs md:text-lg lg:text-xl font-bold text-[#3d200e] tracking-widest mt-1 drop-shadow-sm">
+                TU REFUGIO DE JUEGOS Y BIENESTAR
+            </p>
+        </header>
+
+        <!-- CARDS CONTAINER (2x2 GRID) -->
+        <main class="relative z-20 max-w-6xl mx-auto px-4 py-2 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                
+                <!-- CARD 1 -->
+                <div class="pill-card rounded-[35px] p-4 md:p-5 flex items-center gap-4">
+                    <div class="flex-shrink-0 w-16 h-16 md:w-20 md:y-20 rounded-full bg-[#5c3719] border-2 border-[#d4af37] flex items-center justify-center text-amber-100 shadow-md">
+                        <i class="fa-solid fa-house-chimney-window text-2xl md:text-3xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xs md:text-base font-extrabold text-[#4a2e16] tracking-tight uppercase leading-snug">
+                            VARIEDAD DE JUEGOS ARTESANALES
+                        </h2>
+                        <p class="text-xs md:text-sm text-[#5a422d] font-medium leading-snug mt-1">
+                            Juegos únicos y tradicionales de madera, cartas y estrategia en línea.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="pill-card rounded-[35px] p-4 md:p-5 flex items-center gap-4">
+                    <div class="flex-shrink-0 w-16 h-16 md:w-20 md:y-20 rounded-full bg-[#5c3719] border-2 border-[#d4af37] flex items-center justify-center text-amber-100 shadow-md">
+                        <i class="fa-solid fa-mobile-screen-button text-2xl md:text-3xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xs md:text-base font-extrabold text-[#4a2e16] tracking-tight uppercase leading-snug">
+                            FÁCIL ACCESO Y ENTRETENIMIENTO ONLINE
+                        </h2>
+                        <p class="text-xs md:text-sm text-[#5a422d] font-medium leading-snug mt-1">
+                            Juega al instante desde cualquier lugar con una interfaz intuitiva y rápida.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="pill-card rounded-[35px] p-4 md:p-5 flex items-center gap-4">
+                    <div class="flex-shrink-0 w-16 h-16 md:w-20 md:y-20 rounded-full bg-[#5c3719] border-2 border-[#d4af37] flex items-center justify-center text-amber-100 shadow-md">
+                        <i class="fa-solid fa-hand-holding-dollar text-2xl md:text-3xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xs md:text-base font-extrabold text-[#4a2e16] tracking-tight uppercase leading-snug">
+                            AYUDA MONETARIA Y SOPORTE ECONÓMICO
+                        </h2>
+                        <p class="text-xs md:text-sm text-[#5a422d] font-medium leading-snug mt-1">
+                            Bonos especiales, recompensas y apoyo financiero responsable para nuestros usuarios.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="pill-card rounded-[35px] p-4 md:p-5 flex items-center gap-4">
+                    <div class="flex-shrink-0 w-16 h-16 md:w-20 md:y-20 rounded-full bg-[#5c3719] border-2 border-[#d4af37] flex items-center justify-center text-amber-100 shadow-md">
+                        <i class="fa-solid fa-people-roof text-2xl md:text-3xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-xs md:text-base font-extrabold text-[#4a2e16] tracking-tight uppercase leading-snug">
+                            AYUDA A ADICCIONES & PSICOLOGÍA GRATIS
+                        </h2>
+                        <p class="text-xs md:text-sm text-[#5a422d] font-medium leading-snug mt-1">
+                            Terapias profesionales y programas de apoyo gratuitos para un juego saludable y equilibrado.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- CALL TO ACTION SECTION -->
+        <section class="relative z-20 text-center py-4 px-4 flex flex-col items-center">
+            
+            <!-- Glow Banner -->
+            <div class="cta-glow px-8 py-1.5 rounded-full mb-3">
+                <span class="text-base md:text-xl font-bold text-[#361c0a] drop-shadow-sm">
+                    ¡Únete a nuestra comunidad invernal!
+                </span>
+            </div>
+
+            <!-- Download Button -->
+            <button class="zoom-hover bg-[#214a30] hover:bg-[#1a3d27] text-white text-sm md:text-lg font-extrabold px-8 py-3 rounded-2xl border-2 border-[#2f6643] shadow-lg flex items-center gap-3 mb-3 cursor-pointer">
+                <i class="fa-solid fa-mobile-screen text-xl"></i>
+                DESCARGA BRAZINO 777
+            </button>
+
+            <!-- Store Badges -->
+            <div class="flex items-center gap-3">
+                <!-- Google Play Badge -->
+                <a href="#" class="zoom-hover bg-black text-white px-3 py-1.5 rounded-lg border border-gray-700 flex items-center gap-2 text-left">
+                    <i class="fa-brands fa-google-play text-lg"></i>
+                    <div>
+                        <div class="text-[8px] uppercase tracking-wider text-gray-300 leading-none">Disponible en</div>
+                        <div class="text-xs font-bold leading-none mt-0.5">Google Play</div>
+                    </div>
+                </a>
+
+                <!-- App Store Badge -->
+                <a href="#" class="zoom-hover bg-black text-white px-3 py-1.5 rounded-lg border border-gray-700 flex items-center gap-2 text-left">
+                    <i class="fa-brands fa-apple text-xl"></i>
+                    <div>
+                        <div class="text-[8px] uppercase tracking-wider text-gray-300 leading-none">Consíguelo en el</div>
+                        <div class="text-xs font-bold leading-none mt-0.5">App Store</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER BAR -->
+        <footer class="relative z-20 bg-[#f7eedf]/95 border-t border-[#d8c2a3] py-2.5 px-6 flex flex-col sm:flex-row justify-between items-center text-xs text-[#523821] font-semibold tracking-wide">
+            <div>
+                Juego Seguro y Saludable | Soporte 24/7
+            </div>
+            <div class="mt-1 sm:mt-0 font-bold hover:text-[#214a30] transition-colors cursor-pointer">
+                brazino777.com
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Generate snowfall dynamically
+        function createSnowflakes() {
+            const snowContainer = document.getElementById('snow-container');
+            const flakeCount = 45;
+
+            for (let i = 0; i < flakeCount; i++) {
+                const flake = document.createElement('div');
+                flake.classList.add('snowflake');
+                
+                // Random snowflake icons or dots
+                const icons = ['❄', '❅', '❆', '•'];
+                flake.innerHTML = icons[Math.floor(Math.random() * icons.length)];
+                
+                // Randomize positions, sizes, and animation speed
+                const size = Math.random() * 14 + 8;
+                const left = Math.random() * 100;
+                const duration = Math.random() * 7 + 5;
+                const delay = Math.random() * 5;
+                const opacity = Math.random() * 0.7 + 0.3;
+
+                flake.style.fontSize = `${size}px`;
+                flake.style.left = `${left}%`;
+                flake.style.animationDuration = `${duration}s`;
+                flake.style.animationDelay = `${delay}s`;
+                flake.style.opacity = opacity;
+
+                snowContainer.appendChild(flake);
+            }
+        }
+
+        window.onload = createSnowflakes;
+    </script>
+</body>
+</html>
